@@ -41,3 +41,5 @@ docker run -d \
   -p 17690:17690 \
   --restart unless-stopped \
   elixirprotocol/validator:3.1.1
+
+  rm elixir.sh
