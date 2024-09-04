@@ -38,7 +38,7 @@ mv /root/validator.env /root/.elixir/validator.env
 docker run -d \
   --env-file /root/.elixir/validator.env \
   --name elixir \
-  -p 17690:17690 \
+  #-p 17690:17690 \
   --restart unless-stopped \
   elixirprotocol/validator:3.1.1
 
