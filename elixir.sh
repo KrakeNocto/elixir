@@ -43,3 +43,5 @@ docker run -d \
   elixirprotocol/validator:3.1.1
 
   rm elixir.sh
+
+  docker logs -f elixir
