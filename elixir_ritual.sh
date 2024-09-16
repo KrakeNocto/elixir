@@ -2,7 +2,7 @@
 
 # Для валидатора создаем чистый кошелек, скачиваем на сервер файл конфига и заполняем его
 
-wget https://files.elixir.finance/validator.env
+wget https://files.elixir.finance/validator.env /home/ritual/
 
 echo "Enter private key:"
 read -r PK
@@ -31,12 +31,12 @@ sed -i.bak -e "s|^STRATEGY_EXECUTOR_IP_ADDRESS=.*|STRATEGY_EXECUTOR_IP_ADDRESS=$
 docker pull elixirprotocol/validator:3.4.4
 
 # Создаем папку .elixir и закидываем файл конфига
-mkdir -p /root/.elixir
-mv /root/validator.env /root/.elixir/validator.env
+mkdir -p /home/ritual/.elixir
+mv /home/ritual/validator.env /home/ritual/.elixir/validator.env
 
 # Start Your Validator:
 docker run -d \
-  --env-file /root/.elixir/validator.env \
+  --env-file /home/ritual/.elixir/validator.env \
   --name elixir \
   -p 17690:17690 \
   --restart unless-stopped \
