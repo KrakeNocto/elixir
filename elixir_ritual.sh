@@ -42,6 +42,6 @@ docker run -d \
   --restart unless-stopped \
   elixirprotocol/validator:3.4.4
 
-  rm elixir.sh
+  rm elixir_ritual.sh
 
   docker logs -f elixir
