@@ -28,7 +28,7 @@ sed -i.bak -e "s|^STRATEGY_EXECUTOR_IP_ADDRESS=.*|STRATEGY_EXECUTOR_IP_ADDRESS=$
 
 
 # Download the Docker image for the Testnet v3 validator by running the following docker command:
-docker pull elixirprotocol/validator:3.1.1
+docker pull elixirprotocol/validator:3.4.4
 
 # Создаем папку .elixir и закидываем файл конфига
 mkdir -p /root/.elixir
