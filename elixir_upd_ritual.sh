@@ -12,6 +12,6 @@ docker run -d \
   --restart unless-stopped \
   elixirprotocol/validator:3.4.6
 
-rm elixir_upd_v3.1.1.sh
+rm elixir_upd_ritual.sh
 
 docker logs -f elixir
