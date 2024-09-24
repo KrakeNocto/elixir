@@ -26,13 +26,12 @@ sed -i.bak -e "s|^STRATEGY_EXECUTOR_IP_ADDRESS=.*|STRATEGY_EXECUTOR_IP_ADDRESS=$
 
 # Дальше жмем CUSTOM VALIDATOR и в появившемся окне вводим адрес валидатора, который вписывали в конфиг и жмем DELEGATE
 
-
-# Download the Docker image for the Testnet v3 validator by running the following docker command:
-docker pull elixirprotocol/validator:3.4.6
-
 # Создаем папку .elixir и закидываем файл конфига
 mkdir -p /home/ritual/.elixir
 mv /home/ritual/validator.env /home/ritual/.elixir/validator.env
+
+# Download the Docker image for the Testnet v3 validator by running the following docker command:
+docker pull elixirprotocol/validator:3.4.6
 
 # Start Your Validator:
 docker run -d \
