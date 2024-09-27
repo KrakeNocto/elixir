@@ -1,5 +1,13 @@
 #!/bin/bash
 
+sleep 10
+
+min_am=60
+max_am=300
+random_am=$(shuf -i $min_am-$max_am -n 1)
+
+echo "Updating Elixir validator after $random_am seconds"
+
 docker kill elixir
 docker rm elixir
 
