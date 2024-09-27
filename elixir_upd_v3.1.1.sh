@@ -8,6 +8,8 @@ random_am=$(shuf -i $min_am-$max_am -n 1)
 
 echo "Updating Elixir validator after $random_am seconds"
 
+sleep $random_am
+
 docker kill elixir
 docker rm elixir
 
