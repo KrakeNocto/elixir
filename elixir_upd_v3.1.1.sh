@@ -2,7 +2,7 @@
 
 echo "Sleeping 0 seconds"
 
-sleep 0
+sleep 43200
 
 min_am=600
 max_am=43200
