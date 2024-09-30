@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Sleeping 86400 seconds"
+echo "Sleeping 0 seconds"
 
 sleep 0
 
