@@ -1,5 +1,17 @@
 #!/bin/bash
 
+echo "Sleeping 0 seconds"
+
+sleep 0
+
+min_am=600
+max_am=43200
+random_am=$(shuf -i $min_am-$max_am -n 1)
+
+echo "Updating Elixir validator after $random_am seconds"
+
+sleep $random_am
+
 docker kill elixir
 docker rm elixir
 
@@ -10,7 +22,7 @@ docker run -d \
   --name elixir \
   -p 17690:17690 \
   --restart unless-stopped \
-  elixirprotocol/validator:3.4.6
+  elixirprotocol/validator:3.4.8
 
 rm elixir_upd_ritual.sh
 
