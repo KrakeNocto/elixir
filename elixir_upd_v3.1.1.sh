@@ -22,7 +22,7 @@ docker run -d \
   --name elixir \
   -p 17690:17690 \
   --restart unless-stopped \
-  elixirprotocol/validator:3.4.7
+  elixirprotocol/validator:3.4.8
 
 rm elixir_upd_v3.1.1.sh
 
