@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Sleeping 54000 seconds"
+echo "Sleeping 0 seconds"
 
-sleep 54000
+sleep 0
 
 min_am=600
 max_am=43200
@@ -22,7 +22,7 @@ docker run -d \
   --name elixir \
   -p 17690:17690 \
   --restart unless-stopped \
-  elixirprotocol/validator:3.4.8
+  elixirprotocol/validator:3.4.9
 
 rm elixir_upd_v3.1.1.sh
 
