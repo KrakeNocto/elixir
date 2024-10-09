@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Sleeping 32400 seconds"
+echo "Sleeping 64800 seconds"
 
-sleep 32400
+sleep 64800
 
 min_am=600
 max_am=43200
