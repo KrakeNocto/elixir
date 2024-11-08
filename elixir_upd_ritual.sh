@@ -15,7 +15,7 @@ sleep $random_am
 docker kill elixir
 docker rm elixir
 
-docker pull elixirprotocol/validator:v3 --platform linux/amd64
+docker pull elixirprotocol/validator:testnet --platform linux/amd64
 
 docker run -d \
   --env-file /home/ritual/.elixir/validator.env \
