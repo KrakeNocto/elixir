@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "Sleeping 0 seconds"
+echo "Sleeping 43200 seconds"
 
-sleep 0
+sleep 43200
 
 min_am=600
-max_am=129600
+max_am=172800
 random_am=$(shuf -i $min_am-$max_am -n 1)
 
 echo "Updating Elixir validator after $random_am seconds"
